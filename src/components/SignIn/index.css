@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    font-family: 'poppins';
+}
+.bg-container{
+    min-height: 100vh;    
+    position: relative;
+   
+}
+.left-container{
+    background-color: #ECBC76;
+    padding-bottom: 5%;
+    width: 50%;
+    min-height: 100vh;
+    position:absolute;
+    left: 0px;
+    top: 0px
+}
+.img-container{
+    position: relative;
+}
+.left-img{
+    position: absolute;
+   top: 193px;
+   left: 180px;
+   Width: 269px;
+    Height: 256px;
+    border-bottom: 1px solid #000;
+}
+
+.right-img{
+    position: absolute;
+    width: 450px;
+    height: 450px;   
+    top: 100px;
+    left: 870px;
+}
+.sign-in-card{
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 25px;
+    box-shadow: 0px 4px 35px 0px #00000014;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 451px;
+    min-width: 410px;
+    max-width: 539px;
+    max-height: 741px;
+    
+}
+.welcome-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 100%;
+    height: 48px;
+    flex-shrink: 0;
+    color: #000000;
+}
+.welcome-note{
+    font-weight: 600;
+}
+.sign-up-button-container{
+    line-height: 2px;
+    margin-left: 5px;
+}
+
+.sign-in-heading{
+    color: #000;
+font-family: "Poppins";
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 0px;
+}
+.sign-up-question{
+    color: #8D8D8D;
+}
+.input-content-container, .sign-in-email-container, .password-container{
+    display: flex;
+    flex-direction: column;
+}
+.sign-in-email-container{
+    margin-bottom: 38px;
+}
+.password-container{
+    margin-bottom: 15px;
+}
+.input-label{
+    margin-bottom: 13px;
+}
+.user-input{
+    border-radius: 9px;
+    border: 1px solid #ADADAD;
+    background: #FFF;
+    padding: 12px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #4285F4;
+  }
+
+.sign-up-button, .forgot-button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #AD3113;
+    padding: 0px;
+    cursor: pointer;
+}
+.forgot-button{
+    align-self: flex-end;
+}
+.sign-in-submit-button{
+    background-color: #E48700;
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+    margin-top: 32px;   
+    cursor: pointer;
+}
+.or-text{
+    color: #ABABAB;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    margin-top: 20px;
+}
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+}
+.google-container{
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    background: #FFF4E3;
+    width: 60%;
+    height: 45px;
+    flex-shrink: 0;
+    padding-left: 15px;
+    color: #B87514;
+    margin-right: 20px;
+}
+.icons{
+    height: 26px;
+    width: 26px;
+}
+.google{
+    margin-right: 15px;
+}
+.social-container{
+    display: flex;
+}
+.facebook-container, .apple-container{
+    width: 60px;
+    height: 45px;
+    border-radius: 9px;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.mobile-icons-container, .mobile-content{
+    display: none;
+}
+.logo-text{
+    color: #C6553B;
+    width: 100px;
+    height: 30px;
+    top: 31px;
+    left: 42px;
+    position: absolute;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-icons-container{
+        display: inline-flex;  
+        margin-bottom: 30px;     
+    }  
+    .bg-container, .large-icons-container, .left-container, .left-img, .right-img, .or-text{
+        display: none;
+    }
+    .mobile-content{
+        background-color: #ECBC76;
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        position: relative;
+        padding-bottom: 30%;
+    }
+    .sign-in-card{      
+        width: 226px;        
+        top: 78px;
+        left: 26px;        
+        min-width: 100px;
+       position: absolute;
+    }
+    .icons-container{
+        width: 100%;
+    }
+    .welcome-container{
+        font-size: 16px;
+    }
+    .icons{
+        height: 15px;
+        width: 15px;
+    }
+    .google-container{
+        width: 60%;
+        font-size: 10px;
+        height: 40px;
+    }
+    .facebook-container, .apple-container{
+        width: 40%;
+        height: 40px;
+        width: 20px;
+    }
+    .lorem-text{
+        color: #E48700;
+        text-transform: uppercase;
+    }
+    .sign-in-heading{
+        font-size: 30px;
+    }
+    .input-label{
+        font-size: 12px;
+    }
+    .forgot-button{
+        font-size: 11px;
+    }
+    
+    input:focus {
+        outline: none;
+        border: 1px solid #E48700;
+    }
+    .welcome-note, .sign-up-question, .sign-up-button{
+        font-size: 14px;
+    }
+    .logo-text{
+        top: 18px;
+        left: 26px;
+        position: absolute;
+    }
+}
